@@ -10,43 +10,39 @@ public class TankMovement : MonoBehaviour
     public AudioClip m_EngineDriving;      
     public float m_PitchRange = 0.2f;
 
-    /*
-    private string m_MovementAxisName;     
-    private string m_TurnAxisName;         
-    private Rigidbody m_Rigidbody;         
-    private float m_MovementInputValue;    
-    private float m_TurnInputValue;        
-    private float m_OriginalPitch;         
+
+    private string m_MovementAxisName;
+    private string m_TurnAxisName;
+    private Rigidbody m_Rigidbody;
+    private float m_MovementInputValue;
+    private float m_TurnInputValue;
+    private float m_OriginalPitch;
 
 
-    private void Awake()
-    {
+    private void Awake() {
         m_Rigidbody = GetComponent<Rigidbody>();
     }
 
 
-    private void OnEnable ()
-    {
+    private void OnEnable() {
         m_Rigidbody.isKinematic = false;
         m_MovementInputValue = 0f;
         m_TurnInputValue = 0f;
     }
 
 
-    private void OnDisable ()
-    {
+    private void OnDisable() {
         m_Rigidbody.isKinematic = true;
     }
 
 
-    private void Start()
-    {
+    private void Start() {
         m_MovementAxisName = "Vertical" + m_PlayerNumber;
         m_TurnAxisName = "Horizontal" + m_PlayerNumber;
 
         m_OriginalPitch = m_MovementAudio.pitch;
     }
-    */
+
 
     private void Update()
     {
